@@ -1,6 +1,6 @@
 let newGame = document.querySelector(".new-btn");
 
-let score = document.querySelector(".score");
+let score = document.getElementById("score");
 let add1 = document.getElementById("add-1");
 let add2 = document.getElementById("add-2");
 let add3 = document.getElementById("add-3");
@@ -15,33 +15,189 @@ let count = 0;
 add1.addEventListener("click", (eo) => {
   count += 1;
   score.textContent = count;
+
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  }
+
+
+
 });
 
 add2.addEventListener("click", (eo) => {
   count += 2;
   score.textContent = count;
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  }
+
 });
 
 add3.addEventListener("click", (eo) => {
   count += 3;
   score.textContent = count;
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  }
+
 });
 
 let num = 0;
 addOne.addEventListener("click", (eo) => {
   num += 1;
   score2.textContent = num;
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+  }
+
+
 });
 
 addTwo.addEventListener("click", (eo) => {
   num += 2;
   score2.textContent = num;
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }
+
 });
 
 addThree.addEventListener("click", (eo) => {
   num += 3;
   score2.textContent = num;
+  if (count > num) {
+    score.style.backgroundColor = "rgb(84, 255, 141)"
+    score.style.color = "black"
+    score2.style.backgroundColor = "rgb(255, 84, 84)"
+    score2.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  } else if (num > count){
+    score2.style.backgroundColor = "rgb(84, 255, 141)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(255, 84, 84)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }else if (num ==count){
+    score2.style.backgroundColor = "rgb(179, 210, 245)"
+    score2.style.color = "black"
+    score.style.backgroundColor = "rgb(179, 210, 245)"
+    score.style.color = "black"
+    score.style.borderRadius = "5px"
+    score2.style.borderRadius = "5px"
+
+  }
+
 });
+
+
 
 window.onload = function () {
   let minute = 00;
@@ -74,6 +230,17 @@ window.onload = function () {
     second = "00";
     OutputSeconds.innerHTML = second;
     OutputMinutes.innerHTML = minute;
+
+   score.style.backgroundColor = "rgb(179, 210, 245)"
+   score.style.color = "black"
+   score2.style.backgroundColor = "rgb(179, 210, 245)"
+   score2.style.color = "black"
+
+   score.style.borderRadius = "5px"
+   score2.style.borderRadius = "5px"
+
+
+
   });
 
   function startTimer() {
@@ -110,3 +277,4 @@ window.onload = function () {
     }
   }
 };
+
